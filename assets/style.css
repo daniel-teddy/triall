@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #0786CA, #E162BE);
+
+    
+}
+
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 97%;
+    height: 97vh;
+    bottom: 5rem;
+    padding: .25rem;
+    color: whitesmoke;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.show img{
+    height: 10rem;
+    width: 10rem;
+}
+
+
+.show .not{
+    display: none;
+}
