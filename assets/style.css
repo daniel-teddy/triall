@@ -1,10 +1,16 @@
 body{
-    height: 100vh;
-    width: 100%;
+    background: linear-gradient(to bottom right, #0786CA, #E162BE);
+    
+}
+
+
+.wrapper{
+    height: 98vh;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom right, #0786CA, #E162BE);
+    
 
     
 }
@@ -17,12 +23,14 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     width: 97%;
-    height: 97vh;
+    height: 90vh;
     bottom: 5rem;
-    padding: .25rem;
+    padding: .75rem;
+    border-radius: .35rem;
     color: whitesmoke;
     background-color: rgb(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
+    overflow: hidden;
 }
 
 .show{
@@ -31,6 +39,12 @@ body{
     justify-content: center;
     flex-direction: column;
     
+}
+.show div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .show img{
     height: 10rem;
@@ -41,3 +55,60 @@ body{
 .show .not{
     display: none;
 }
+
+.btn, .btn a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+.btn a{
+    cursor: pointer;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    border-radius: .35rem;
+    color: #070921;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.all span{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+}
+.all span i{
+    color: rgb(239, 68, 68);
+    font-size:1.65rem;
+    margin-left: .45rem;
+    margin-right: .45rem;
+}
+a.this {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    margin-left: .45rem;
+    margin-right: .45rem;
+}
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
